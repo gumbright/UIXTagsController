@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E40C9576186501DB0083BB68 /* UIXTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = E40C9575186501DB0083BB68 /* UIXTagView.m */; };
+		E41404901845C0F4000C8EE7 /* UIXTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E414048F1845C0F4000C8EE7 /* UIXTagCell.xib */; };
 		E4CDAEA318331FD600854802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CDAEA218331FD600854802 /* Foundation.framework */; };
 		E4CDAEA518331FD600854802 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CDAEA418331FD600854802 /* CoreGraphics.framework */; };
 		E4CDAEA718331FD600854802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CDAEA618331FD600854802 /* UIKit.framework */; };
@@ -21,6 +23,13 @@
 		E4CDAEC418331FD600854802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CDAEA618331FD600854802 /* UIKit.framework */; };
 		E4CDAECC18331FD600854802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CDAECA18331FD600854802 /* InfoPlist.strings */; };
 		E4CDAECE18331FD600854802 /* UIXTagsControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CDAECD18331FD600854802 /* UIXTagsControllerDemoTests.m */; };
+		E4CDAEDA183334D200854802 /* UIXTagsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CDAED9183334D200854802 /* UIXTagsController.m */; };
+		E4CDAEE41833389100854802 /* UIXHorizontalPackedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CDAEDE1833389100854802 /* UIXHorizontalPackedLayout.m */; };
+		E4CDAEE51833389100854802 /* UIXPackedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CDAEE01833389100854802 /* UIXPackedLayout.m */; };
+		E4CDAEE61833389100854802 /* UIXVerticalPackedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CDAEE31833389100854802 /* UIXVerticalPackedLayout.m */; };
+		E4CDAEEA1834271400854802 /* UIXTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CDAEE91834271400854802 /* UIXTagCell.m */; };
+		E4E352A3183BCEF90003ABB2 /* UIXTagsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4E352A2183BCEF90003ABB2 /* UIXTagsController.xib */; };
+		E4E352A5183BF7E40003ABB2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E352A4183BF7E40003ABB2 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E40C9574186501DB0083BB68 /* UIXTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXTagView.h; path = UIXTagsController/UIXTagView.h; sourceTree = SOURCE_ROOT; };
+		E40C9575186501DB0083BB68 /* UIXTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIXTagView.m; path = UIXTagsController/UIXTagView.m; sourceTree = SOURCE_ROOT; };
+		E414048F1845C0F4000C8EE7 /* UIXTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UIXTagCell.xib; path = UIXTagsController/UIXTagCell.xib; sourceTree = SOURCE_ROOT; };
 		E4CDAE9F18331FD600854802 /* UIXTagsControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIXTagsControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CDAEA218331FD600854802 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E4CDAEA418331FD600854802 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +65,18 @@
 		E4CDAEC918331FD600854802 /* UIXTagsControllerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIXTagsControllerDemoTests-Info.plist"; sourceTree = "<group>"; };
 		E4CDAECB18331FD600854802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4CDAECD18331FD600854802 /* UIXTagsControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIXTagsControllerDemoTests.m; sourceTree = "<group>"; };
+		E4CDAED8183334D200854802 /* UIXTagsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXTagsController.h; path = UIXTagsController/UIXTagsController.h; sourceTree = SOURCE_ROOT; };
+		E4CDAED9183334D200854802 /* UIXTagsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIXTagsController.m; path = UIXTagsController/UIXTagsController.m; sourceTree = SOURCE_ROOT; };
+		E4CDAEDD1833389100854802 /* UIXHorizontalPackedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIXHorizontalPackedLayout.h; sourceTree = "<group>"; };
+		E4CDAEDE1833389100854802 /* UIXHorizontalPackedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXHorizontalPackedLayout.m; sourceTree = "<group>"; };
+		E4CDAEDF1833389100854802 /* UIXPackedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIXPackedLayout.h; sourceTree = "<group>"; };
+		E4CDAEE01833389100854802 /* UIXPackedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXPackedLayout.m; sourceTree = "<group>"; };
+		E4CDAEE21833389100854802 /* UIXVerticalPackedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIXVerticalPackedLayout.h; sourceTree = "<group>"; };
+		E4CDAEE31833389100854802 /* UIXVerticalPackedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXVerticalPackedLayout.m; sourceTree = "<group>"; };
+		E4CDAEE81834271400854802 /* UIXTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXTagCell.h; path = UIXTagsController/UIXTagCell.h; sourceTree = SOURCE_ROOT; };
+		E4CDAEE91834271400854802 /* UIXTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIXTagCell.m; path = UIXTagsController/UIXTagCell.m; sourceTree = SOURCE_ROOT; };
+		E4E352A2183BCEF90003ABB2 /* UIXTagsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UIXTagsController.xib; path = UIXTagsController/UIXTagsController.xib; sourceTree = SOURCE_ROOT; };
+		E4E352A4183BF7E40003ABB2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E352A5183BF7E40003ABB2 /* QuartzCore.framework in Frameworks */,
 				E4CDAEA518331FD600854802 /* CoreGraphics.framework in Frameworks */,
 				E4CDAEA718331FD600854802 /* UIKit.framework in Frameworks */,
 				E4CDAEA318331FD600854802 /* Foundation.framework in Frameworks */,
@@ -83,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				E4CDAEA818331FD600854802 /* UIXTagsControllerDemo */,
+				E4CDAED71833349600854802 /* UIXTagsController */,
 				E4CDAEC718331FD600854802 /* UIXTagsControllerDemoTests */,
 				E4CDAEA118331FD600854802 /* Frameworks */,
 				E4CDAEA018331FD600854802 /* Products */,
@@ -101,6 +127,7 @@
 		E4CDAEA118331FD600854802 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4E352A4183BF7E40003ABB2 /* QuartzCore.framework */,
 				E4CDAEA218331FD600854802 /* Foundation.framework */,
 				E4CDAEA418331FD600854802 /* CoreGraphics.framework */,
 				E4CDAEA618331FD600854802 /* UIKit.framework */,
@@ -150,6 +177,53 @@
 				E4CDAECA18331FD600854802 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4CDAED71833349600854802 /* UIXTagsController */ = {
+			isa = PBXGroup;
+			children = (
+				E40C9574186501DB0083BB68 /* UIXTagView.h */,
+				E40C9575186501DB0083BB68 /* UIXTagView.m */,
+				E414048F1845C0F4000C8EE7 /* UIXTagCell.xib */,
+				E4CDAEDB1833389100854802 /* UIXPackedLayout */,
+				E4CDAED8183334D200854802 /* UIXTagsController.h */,
+				E4CDAED9183334D200854802 /* UIXTagsController.m */,
+				E4CDAEE81834271400854802 /* UIXTagCell.h */,
+				E4CDAEE91834271400854802 /* UIXTagCell.m */,
+				E4E352A2183BCEF90003ABB2 /* UIXTagsController.xib */,
+			);
+			name = UIXTagsController;
+			path = UIXTagsControllerDemo;
+			sourceTree = "<group>";
+		};
+		E4CDAEDB1833389100854802 /* UIXPackedLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E4CDAEDC1833389100854802 /* UIXHorizontalPackedLayout */,
+				E4CDAEDF1833389100854802 /* UIXPackedLayout.h */,
+				E4CDAEE01833389100854802 /* UIXPackedLayout.m */,
+				E4CDAEE11833389100854802 /* UIXVerticalPackedLayout */,
+			);
+			name = UIXPackedLayout;
+			path = UIXTagsController/UIXPackedLayout;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4CDAEDC1833389100854802 /* UIXHorizontalPackedLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E4CDAEDD1833389100854802 /* UIXHorizontalPackedLayout.h */,
+				E4CDAEDE1833389100854802 /* UIXHorizontalPackedLayout.m */,
+			);
+			path = UIXHorizontalPackedLayout;
+			sourceTree = "<group>";
+		};
+		E4CDAEE11833389100854802 /* UIXVerticalPackedLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E4CDAEE21833389100854802 /* UIXVerticalPackedLayout.h */,
+				E4CDAEE31833389100854802 /* UIXVerticalPackedLayout.m */,
+			);
+			path = UIXVerticalPackedLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +304,8 @@
 			files = (
 				E4CDAEBB18331FD600854802 /* Images.xcassets in Resources */,
 				E4CDAEAD18331FD600854802 /* InfoPlist.strings in Resources */,
+				E4E352A3183BCEF90003ABB2 /* UIXTagsController.xib in Resources */,
+				E41404901845C0F4000C8EE7 /* UIXTagCell.xib in Resources */,
 				E4CDAEB618331FD600854802 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CDAEEA1834271400854802 /* UIXTagCell.m in Sources */,
+				E4CDAEE61833389100854802 /* UIXVerticalPackedLayout.m in Sources */,
 				E4CDAEB918331FD600854802 /* ViewController.m in Sources */,
+				E4CDAEE41833389100854802 /* UIXHorizontalPackedLayout.m in Sources */,
+				E40C9576186501DB0083BB68 /* UIXTagView.m in Sources */,
 				E4CDAEB318331FD600854802 /* AppDelegate.m in Sources */,
 				E4CDAEAF18331FD600854802 /* main.m in Sources */,
+				E4CDAEE51833389100854802 /* UIXPackedLayout.m in Sources */,
+				E4CDAEDA183334D200854802 /* UIXTagsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +542,7 @@
 				E4CDAED318331FD600854802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4CDAED418331FD600854802 /* Build configuration list for PBXNativeTarget "UIXTagsControllerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +551,7 @@
 				E4CDAED618331FD600854802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
