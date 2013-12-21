@@ -12,10 +12,6 @@
 @property (nonatomic, copy) NSString* tag;
 @property (nonatomic, assign) BOOL tagIsActive;
 
-@property (nonatomic, strong) UIColor* tagBackgroundColor;
-@property (nonatomic, strong) UIColor* tagTextColor;
-@property (nonatomic, strong) UIColor* selectedTagBackgroundColor;
-@property (nonatomic, strong) UIColor* selectedTagTextColor;
 @end
 
 @class UIXTagsController;
@@ -43,6 +39,13 @@
 @interface UIXTagsController : UIViewController <UIXPackedLayoutDelegate>
 @property (nonatomic, weak) NSObject<UIXTagsControllerDatasource>* datasource;
 @property (nonatomic, weak) NSObject<UIXTagsControllerDelegate>* delegate;
+
+@property (nonatomic, strong) UIColor* tagBorderColor;
+@property (nonatomic, strong) UIColor* selectedTagBorderColor;
+@property (nonatomic, strong) UIColor* tagFillColor;
+@property (nonatomic, strong) UIColor* selectedTagFillColor;
+@property (nonatomic, strong) UIColor* tagTextColor;
+@property (nonatomic, strong) UIColor* selectedTagTextColor;
 
 + (UIXTagsController*) controller;
 

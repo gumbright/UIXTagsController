@@ -47,6 +47,14 @@
     UIXTagsController* vc = [UIXTagsController controller];
     vc.datasource = self;
     vc.delegate = self;
+    
+    vc.tagBorderColor = [UIColor greenColor];
+    vc.selectedTagBorderColor = [UIColor orangeColor];
+    vc.tagFillColor = [UIColor yellowColor];
+    vc.selectedTagFillColor = [UIColor redColor];
+    vc.tagTextColor = [UIColor blueColor];
+    vc.selectedTagTextColor = [UIColor cyanColor];
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 

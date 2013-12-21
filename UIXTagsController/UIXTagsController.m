@@ -171,6 +171,14 @@
 {
     UIXTagInfo* tagInfo = [[UIXTagInfo alloc] init];
     [self.datasource tagController:self infoForTag:tagInfo atIndex:indexPath.item];
+
+    if (self.tagBorderColor) cell.tagBorderColor = self.tagBorderColor;
+    if (self.selectedTagBorderColor) cell.selectedTagBorderColor = self.selectedTagBorderColor;
+    if (self.tagFillColor) cell.tagFillColor = self.tagFillColor;
+    if (self.selectedTagFillColor) cell.selectedTagFillColor = self.selectedTagFillColor;
+    if (self.tagTextColor) cell.tagTextColor = self.tagTextColor;
+    if (self.selectedTagTextColor) cell.selectedTagTextColor = self.selectedTagTextColor;
+
     cell.tagString = tagInfo.tag;
     cell.activeTag = tagInfo.tagIsActive;
 }

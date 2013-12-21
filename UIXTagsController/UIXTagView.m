@@ -116,11 +116,13 @@
     
     if (activeTag)
     {
+        self.shapeLayer.strokeColor = self.selectedTagBorderColor.CGColor;
         self.shapeLayer.fillColor = self.selectedTagFillColor.CGColor;
         self.tagLabel.textColor = self.selectedTagTextColor;
     }
     else
     {
+        self.shapeLayer.strokeColor = self.tagBorderColor.CGColor;
         self.shapeLayer.fillColor = self.tagFillColor.CGColor;
         self.tagLabel.textColor = self.tagTextColor;
     }
