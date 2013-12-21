@@ -33,7 +33,6 @@
     [self.tagLabel setContentCompressionResistancePriority:UILayoutPriorityDefaultHigh forAxis:UILayoutConstraintAxisHorizontal];
     
     [self addSubview:self.tagLabel];
-    UILabel* tagLabel = self.tagLabel;
     
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.tagLabel
                                                      attribute:NSLayoutAttributeCenterX
@@ -50,18 +49,12 @@
                                                     multiplier:1.0
                                                       constant:0]];
 
-//    NSArray* arr = [NSLayoutConstraint constraintsWithVisualFormat:@"|-[tagLabel(>=0)]-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(tagLabel)];
-//    [self addConstraints:arr];
-//    arr = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[tagLabel(40)]" options:NSLayoutFormatAlignAllCenterX metrics:nil views:NSDictionaryOfVariableBindings(tagLabel)];
-//    [self addConstraints:arr];
-    
     self.shapeLayer = [[CAShapeLayer alloc] init];
-    self.shapeLayer.lineWidth = 1.0;
-    self.shapeLayer.strokeColor = [UIColor greenColor].CGColor;
-    self.shapeLayer.fillColor = [UIColor whiteColor].CGColor;
+    self.shapeLayer.lineWidth = 2.0;
+    self.shapeLayer.strokeColor = self.tagBorderColor.CGColor;
+    self.shapeLayer.fillColor = self.tagFillColor.CGColor;
     
-    [self.layer insertSublayer:self.shapeLayer atIndex:0];
-    //    [self.contentView.layer insertSublayer:self.shapeLayer atIndex:0];
+    [self.layer insertSublayer:self.shapeLayer atIndex:0];    
 }
 
 /////////////////////////////////////////////////////
@@ -83,7 +76,7 @@
 {
     CGSize size = [self.tagLabel intrinsicContentSize];
     size.width += 16;
-    size.height = 40;
+    size.height = 30;
     
     return size;
 }
@@ -123,14 +116,85 @@
     
     if (activeTag)
     {
-        self.shapeLayer.fillColor = [UIColor greenColor].CGColor;
-        self.tagLabel.textColor = [UIColor whiteColor];
+        self.shapeLayer.fillColor = self.selectedTagFillColor.CGColor;
+        self.tagLabel.textColor = self.selectedTagTextColor;
     }
     else
     {
-        self.shapeLayer.fillColor = [UIColor whiteColor].CGColor;
-        self.tagLabel.textColor = [UIColor blackColor];
+        self.shapeLayer.fillColor = self.tagFillColor.CGColor;
+        self.tagLabel.textColor = self.tagTextColor;
     }
 }
 
+/////////////////////////////////////////////////////
+//
+/////////////////////////////////////////////////////
+- (UIColor*) tagBorderColor
+{
+    if (_tagBorderColor == nil)
+    {
+        return [UIColor blackColor];
+    }
+    return _tagBorderColor;
+}
+
+/////////////////////////////////////////////////////
+//
+/////////////////////////////////////////////////////
+- (UIColor*) selectedTagBorderColor
+{
+    if (_selectedTagBorderColor == nil)
+    {
+        return [UIColor blackColor];
+    }
+    return _selectedTagBorderColor;
+}
+
+/////////////////////////////////////////////////////
+//
+/////////////////////////////////////////////////////
+- (UIColor*)  tagFillColor
+{
+    if (_tagFillColor == nil)
+    {
+        return [UIColor whiteColor];
+    }
+    return _tagFillColor;
+}
+
+/////////////////////////////////////////////////////
+//
+/////////////////////////////////////////////////////
+- (UIColor*)  selectedTagFillColor
+{
+    if (_selectedTagFillColor == nil)
+    {
+        return [UIColor blackColor];
+    }
+    return _selectedTagFillColor;
+}
+
+/////////////////////////////////////////////////////
+//
+/////////////////////////////////////////////////////
+- (UIColor*)  tagTextColor
+{
+    if (_tagTextColor == nil)
+    {
+        return [UIColor blackColor];
+    }
+    return _tagTextColor;
+}
+
+/////////////////////////////////////////////////////
+//
+/////////////////////////////////////////////////////
+- (UIColor*)  selectedTagTextColor
+{
+    if (_selectedTagTextColor == nil)
+    {
+        return [UIColor whiteColor];
+    }
+    return _selectedTagTextColor;
+}
 @end

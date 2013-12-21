@@ -66,7 +66,7 @@
     layout.horizontalSpacing = 10;
     layout.rowSpacing = 10;
     layout.justified = NO;
-    layout.rowHeight = 40;
+    layout.rowHeight = 30;
     self.collectionView.collectionViewLayout = layout;
 
 //    UINib *cellNib = [UINib nibWithNibName:@"UIXTagCell" bundle:nil];
