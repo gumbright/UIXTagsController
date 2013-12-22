@@ -150,7 +150,7 @@
 {
     BOOL reload = NO;
     
-    UIXTagCell* cell = [collectionView cellForItemAtIndexPath:indexPath];
+    //UIXTagCell* cell = [collectionView cellForItemAtIndexPath:indexPath];
     if ([self.delegate respondsToSelector:@selector(tagController:selectedTagAtIndex:)])
     {
         reload = [self.delegate tagController:self selectedTagAtIndex:indexPath.item];
@@ -201,7 +201,7 @@
     NSString* newTag = self.entryField.text;
     self.entryField.text = @"";
     [self.datasource tagController:self filterChanged:nil];
-    NSInteger newTagIndex = [self.datasource tagController:self createTag:newTag];
+    [self.datasource tagController:self createTag:newTag];
     [self.collectionView reloadData];
 }
 
@@ -222,7 +222,6 @@
     
     CGRect collectionFrame = [self.view convertRect:self.collectionView.frame fromView:self.collectionView.superview];
     CGRect overlap = CGRectIntersection(collectionFrame, keyboardEndingFrame);
-    CGRect frame = self.view.frame;
     
     self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, overlap.size.height);
 }

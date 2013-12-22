@@ -11,6 +11,7 @@
 @protocol UIXPackedLayoutDelegate <NSObject>
 
 - (CGSize) UIXPackedLayout: (UIXPackedLayout*) layout sizeForItemAtIndex:(NSIndexPath*) indexPath;
+@optional
 - (CGSize) UIXPackedLayout: (UIXPackedLayout*) layout sizeOfHeaderForSection:(NSInteger) section;
 
 @end

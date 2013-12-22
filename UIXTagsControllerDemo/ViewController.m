@@ -23,8 +23,8 @@
 {
     [super viewDidLoad];
     
-    self.tags = @[@"arachnid",@"banana",@"crotch",@"drag",@"ectoplasm",@"flipflop",@"groin",@"hamburger",@"igloo",@"jumper",@"knickknack",@"lubricant",@"muffler",@"ninny",@"ogre",@"puddle",@"quiver",@"retsin",@"strap",@"toaster",@"uvula",@"viceroy",@"witch",@"xiv",@"yodeller",@"zenith",@"apple",@"muppet",@"monsters",@"spork",@"comic",@"frog",@"talentless"];
-    self.tags = [NSMutableArray arrayWithArray:[self.tags sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)]];
+    NSArray* arr = @[@"arachnid",@"banana",@"crotch",@"drag",@"ectoplasm",@"flipflop",@"groin",@"hamburger",@"igloo",@"jumper",@"knickknack",@"lubricant",@"muffler",@"ninny",@"ogre",@"puddle",@"quiver",@"retsin",@"strap",@"toaster",@"uvula",@"viceroy",@"witch",@"xiv",@"yodeller",@"zenith",@"apple",@"muppet",@"monsters",@"spork",@"comic",@"frog",@"talentless"];
+    self.tags = [NSMutableArray arrayWithArray:[arr sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)]];
     self.selectedTags = [NSMutableArray arrayWithObjects:@"igloo",@"viceroy",@"witch",@"knickknack",nil];
 }
 

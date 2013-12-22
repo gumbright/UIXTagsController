@@ -11,7 +11,6 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface UIXTagCell ()
-@property (nonatomic, strong) IBOutlet UILabel* tagLabel;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint* labelLeading;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint* labelTrailing;
 @property (nonatomic, strong) CAShapeLayer* shapeLayer;

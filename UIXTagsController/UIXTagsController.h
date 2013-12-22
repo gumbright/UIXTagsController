@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIXPackedLayout.h"
 
 @interface UIXTagInfo : NSObject
 @property (nonatomic, copy) NSString* tag;
