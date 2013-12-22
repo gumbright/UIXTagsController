@@ -18,12 +18,9 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HED-iV-V6q">
-                    <rect key="frame" x="0.0" y="120" width="320" height="360"/>
+                    <rect key="frame" x="0.0" y="122" width="320" height="358"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="360" id="D5g-s0-8X9"/>
-                    </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pbi-ZL-jv3">
                         <size key="itemSize" width="64" height="30"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -36,18 +33,18 @@
                         <outlet property="delegate" destination="-1" id="gwD-vq-p5J"/>
                     </connections>
                 </collectionView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="XDs-so-GVC">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="XDs-so-GVC">
                     <rect key="frame" x="20" y="82" width="238" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0Sl-GR-MeE"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfN-6X-Dqz">
+                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfN-6X-Dqz">
                     <rect key="frame" x="268" y="82" width="32" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="3oR-h1-smx"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Add">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -66,8 +63,8 @@
                 <constraint firstItem="HED-iV-V6q" firstAttribute="leading" secondItem="Flb-HP-rnF" secondAttribute="leading" id="dia-BJ-qc5"/>
                 <constraint firstAttribute="trailing" secondItem="HED-iV-V6q" secondAttribute="trailing" id="dno-Mj-hfs"/>
                 <constraint firstAttribute="bottom" secondItem="HED-iV-V6q" secondAttribute="bottom" id="ffi-SD-7t0"/>
+                <constraint firstItem="tfN-6X-Dqz" firstAttribute="centerY" secondItem="XDs-so-GVC" secondAttribute="centerY" id="fgq-9l-7f2"/>
                 <constraint firstItem="XDs-so-GVC" firstAttribute="leading" secondItem="Flb-HP-rnF" secondAttribute="leading" constant="20" id="n4E-jP-oMh"/>
-                <constraint firstItem="tfN-6X-Dqz" firstAttribute="top" secondItem="XDs-so-GVC" secondAttribute="top" id="wbN-GW-5my"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
